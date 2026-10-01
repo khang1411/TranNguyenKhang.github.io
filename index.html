@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giới thiệu bản thân</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f6f8fc;line-height:1.6}
+header{background:linear-gradient(135deg,#172033,#405987);color:white;padding:25px 7% 80px}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-weight:bold;letter-spacing:2px}
+nav a{color:white;text-decoration:none;margin-left:20px}
+.hero{max-width:1100px;margin:110px auto 0;display:flex;gap:40px;align-items:center}
+.avatar{width:160px;height:160px;border-radius:50%;border:2px solid #fff8;display:grid;place-items:center;background:#ffffff20;font-weight:bold;flex-shrink:0}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;margin:10px 0}
+h1 span{color:#b9ddff}
+.button{display:inline-block;margin-top:15px;padding:11px 20px;border-radius:10px;background:white;color:#172033;text-decoration:none;font-weight:bold}
+section{max-width:1100px;margin:auto;padding:75px 7%}
+.alt{max-width:none;background:#edf1f8;padding-left:calc(7%);padding-right:calc(7%)}
+.label{font-size:.8rem;letter-spacing:2px;font-weight:bold;color:#60739f}
+h2{font-size:2.5rem;margin-top:5px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:0 8px 25px #17203312}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+li{margin:10px 0}
+footer{background:#172033;color:white;text-align:center;padding:30px}
+@media(max-width:750px){
+.hero{flex-direction:column;align-items:flex-start;margin-top:70px}
+.grid,.two{grid-template-columns:1fr}
+nav a{margin-left:0;margin-right:15px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">MY PROFILE</div>
+<div>
+<a href="#about">Giới thiệu</a>
+<a href="#education">Học tập</a>
+<a href="#skills">Chuyên môn</a>
+<a href="#hobbies">Sở thích</a>
+</div>
+</nav>
+
+<div class="hero">
+<div class="avatar">ẢNH</div>
+<div>
+<p>WELCOME TO MY WEBSITE</p>
+<h1>Xin chào, tôi là <span>[HỌ VÀ TÊN]</span></h1>
+<p>Sinh viên · [NGÀNH HỌC] · [TRƯỜNG]</p>
+<a class="button" href="#about">Xem giới thiệu</a>
+</div>
+</div>
+</header>
+
+<section id="about">
+<p class="label">01 — GIỚI THIỆU</p>
+<h2>Thông tin cá nhân</h2>
+<div class="grid">
+<div class="card"><b>Họ tên</b><p>[HỌ VÀ TÊN]</p></div>
+<div class="card"><b>Ngày sinh</b><p>[NGÀY/THÁNG/NĂM]</p></div>
+<div class="card"><b>Địa chỉ</b><p>[ĐỊA CHỈ]</p></div>
+<div class="card"><b>Trường</b><p>[TÊN TRƯỜNG]</p></div>
+</div>
+</section>
+
+<section id="education" class="alt">
+<p class="label">02 — HỌC TẬP</p>
+<h2>Quá trình học</h2>
+<div class="card">
+<h3>[NĂM – NAY] — [TÊN TRƯỜNG / NGÀNH HỌC]</h3>
+<p>[Mô tả ngắn về quá trình học tập]</p>
+</div>
+</section>
+
+<section id="skills">
+<p class="label">03 — CHUYÊN MÔN</p>
+<h2>Lĩnh vực chuyên môn & kinh nghiệm</h2>
+<div class="two">
+<div class="card">
+<h3>Lĩnh vực chuyên môn</h3>
+<ul>
+<li>[Kỹ năng / lĩnh vực 1]</li>
+<li>[Kỹ năng / lĩnh vực 2]</li>
+<li>[Kỹ năng / lĩnh vực 3]</li>
+</ul>
+</div>
+<div class="card">
+<h3>Kinh nghiệm</h3>
+<p>[Mô tả kinh nghiệm học tập, dự án, hoạt động hoặc công việc nếu có.]</p>
+</div>
+</div>
+</section>
+
+<section id="hobbies" class="alt">
+<p class="label">04 — CÁ NHÂN</p>
+<h2>Sở thích & thành tích</h2>
+<div class="two">
+<div class="card">
+<h3>Sở thích</h3>
+<p>[Ví dụ: nghe nhạc, chơi game, xem phim, thể thao, lập trình...]</p>
+</div>
+<div class="card">
+<h3>Thành tích cá nhân</h3>
+<ul>
+<li>[Thành tích 1]</li>
+<li>[Thành tích 2]</li>
+<li>[Thành tích 3]</li>
+</ul>
+</div>
+</div>
+</section>
+
+<footer>© 2026 [HỌ VÀ TÊN] · Website giới thiệu bản thân</footer>
+</body>
+</html>
